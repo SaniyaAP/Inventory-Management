@@ -1,0 +1,167 @@
+/* Contact Section Styles */
+.contact {
+    padding: 60px 0;
+}
+
+.contact .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.contact .section-title p {
+    font-size: 18px;
+}
+
+.contact .section-title .description-title {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.contact .info-wrap {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact .info-item {
+    margin-bottom: 40px;
+}
+
+.contact .info-item i {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact .info-item h3 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact .info-item:hover i {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+/* Style for Send Message Button in col-md-12 text-center */
+.contact .php-email-form .col-md-12.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact .php-email-form .col-md-12.text-center button[type="submit"] {
+    color: var(--contrast-color); /* Text color */
+    background: royalblue; /* Set background to royalblue */
+    border: none;
+    padding: 12px 35px; /* Padding for the button */
+    font-size: 16px; /* Font size for the button text */
+    border-radius: 50px; /* Rounded edges */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    transition: background 0.4s ease; /* Smooth background transition on hover */
+    width: auto; /* Default width for button */
+}
+
+.contact .php-email-form .col-md-12.text-center button[type="submit"]:hover {
+    background: rgb(51, 51, 164); /* Change background to darkblue on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 575px) {
+    .contact .php-email-form .col-md-12.text-center button[type="submit"] {
+        width: 100%; /* Full width on small screens */
+        padding: 12px 30px; /* Adjust padding */
+    }
+}
+
+/* React Contact Form Styling */
+.contact .php-email-form {
+    background-color: var(--surface-color);
+    height: 100%;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: var(--surface-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
+.contact .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/* Updated Send Message Button */
+.contact .php-email-form button[type="submit"] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 575px) {
+    .contact .info-wrap {
+        padding: 20px;
+    }
+
+    .contact .php-email-form {
+        padding: 20px;
+    }
+
+    .contact .php-email-form input[type="text"],
+    .contact .php-email-form input[type="email"],
+    .contact .php-email-form textarea {
+        font-size: 14px;
+    }
+
+    .contact .php-email-form button[type="submit"] {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+

@@ -1,0 +1,7 @@
+/* Stock.css */
+.low-stock-row {
+    background-color: #f8d7da;
+    /* Light red for low stock */
+    color: #721c24;
+    /* Dark red text for visibility */
+}

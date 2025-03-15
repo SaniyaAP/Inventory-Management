@@ -1,0 +1,23 @@
+.hero {
+    width: 100%;
+    min-height: 75vh;
+    position: relative;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    background: url("../assets/hero-bg.jpg") top left; /* Updated path */
+    background-size: cover;
+  }
+  
+  .hero:before {
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 30%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Other styles remain unchanged */
+  
